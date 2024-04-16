@@ -1,0 +1,38 @@
+.background {
+    -fx-background-color: white;
+}
+
+.textfield {
+    -fx-border-color: #000;
+    -fx-border-width: .3px;
+    -fx-font-family: Tahoma;
+    -fx-border-radius: 20px;
+}
+
+.textfield:focused {
+    -fx-border-color: #87a492;
+    -fx-border-width: 1px;
+}
+
+.btn {
+    -fx-background-color: linear-gradient(to bottom right, #54bdd2, #1471ab);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    /*-fx-border-radius: 100px;*/
+}
+
+.btn:hover {
+    -fx-background-color: linear-gradient(to bottom right, #74cee7, #3b9ad7);
+}
+
+.closebtn {
+    -fx-background-color: #dc5454;
+    -fx-cursor: hand;
+    -fx-border-radius: 50px;
+    -fx-border-width: 5px;
+}
+
+.closebtn:hover {
+    -fx-background-color: #e77b7b;
+}
