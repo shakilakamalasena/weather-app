@@ -64,7 +64,7 @@ public class guiController {
     void showData() {
         DataImplement dataImplement = new DataImplement(cityName);
         outputloc.setText(cityName);
-        outputTemp.setText(Integer.toString(dataImplement.Temparature()) + "C");
+        outputTemp.setText(Integer.toString(dataImplement.Temparature()) + " °C");
     }
 
     @FXML
