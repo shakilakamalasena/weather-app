@@ -17,10 +17,22 @@ public class guiController {
     private AnchorPane backPane;
 
     @FXML
+    private Button backbtn;
+
+    @FXML
     private Button btn_close;
 
     @FXML
+    private Button btn_close2;
+
+    @FXML
     private Button btn_search;
+
+    @FXML
+    private Label datetime;
+
+    @FXML
+    private Label direction;
 
     @FXML
     private Label error;
@@ -29,13 +41,25 @@ public class guiController {
     private AnchorPane frontPane;
 
     @FXML
+    private Label humidity;
+
+    @FXML
     private TextField loc;
+
+    @FXML
+    private Label outputTemp;
 
     @FXML
     private Label outputloc;
 
     @FXML
-    private Label outputTemp;
+    private Label pressure;
+
+    @FXML
+    private Label weatherDesc;
+
+    @FXML
+    private Label windSpeed;
 
     @FXML
     void Search(ActionEvent event) {
@@ -51,7 +75,7 @@ public class guiController {
                 backPane.setVisible(true);
                 showData();
             } else {
-                error.setText("Not Found");
+                error.setText("Location can't be found");
             }
 
 
@@ -63,13 +87,27 @@ public class guiController {
     @FXML
     void showData() {
         DataImplement dataImplement = new DataImplement(cityName);
-        outputloc.setText(cityName);
-        outputTemp.setText(Integer.toString(dataImplement.Temparature()) + " °C");
+//        outputloc.setText(cityName);
+        outputTemp.setText(Integer.toString(dataImplement.Temparature()) + "°C");
+        datetime.setText(dataImplement.dateTime());
+        outputloc.setText(dataImplement.Location());
+        weatherDesc.setText(dataImplement.WeatherDescription());
+        humidity.setText(dataImplement.Humidity() + "%");
+        windSpeed.setText(dataImplement.WindSpeed() + " m/s");
+        pressure.setText(Double.toString(dataImplement.Pressure()) + " hpa");
+        direction.setText(Double.toString(dataImplement.WindDirection()) + "°");
     }
 
     @FXML
     void closeWindow(ActionEvent event) {
         Stage stage = (Stage) btn_close.getScene().getWindow();
         stage.close();
+    }
+
+    @FXML
+    void back(ActionEvent event) {
+        frontPane.setVisible(true);
+        backPane.setVisible(false);
+        error.setText("");
     }
 }

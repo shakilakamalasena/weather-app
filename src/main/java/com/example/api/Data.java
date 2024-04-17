@@ -1,6 +1,13 @@
 package com.example.api;
 
 public interface Data {
-    String WeatherDescription();
     int Temparature();
+    String dateTime();
+    String WeatherDescription();
+    String Location();
+    Double Humidity();
+    Double WindSpeed();
+    Double Pressure();
+    Double WindDirection();
+//    String Icon();
 }

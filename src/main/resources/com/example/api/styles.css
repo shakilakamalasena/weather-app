@@ -36,3 +36,8 @@
 .closebtn:hover {
     -fx-background-color: #e77b7b;
 }
+
+.backbtn {
+    -fx-background-color: #fff;
+    -fx-cursor: hand;
+}
