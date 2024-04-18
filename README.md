@@ -15,7 +15,7 @@ Using the WeatherApp is straightforward. Follow these steps to get started:
 
 1. **Clone the Repository:** Clone the weather-app repository to your local machine using Git.
 2. **Run the Application:**
-    - Open the project in your Java IDE of choice.
+    - Open the project in your Intellij IDEA IDE.
     - Build and run the application within your IDE environment.
 3. **Ensure Internet Connection:**
     - Make sure you have an active internet connection to fetch real-time weather data from the OpenWeatherMap API.
@@ -24,7 +24,7 @@ Using the WeatherApp is straightforward. Follow these steps to get started:
 
 Check out our demo video to see the WeatherApp in action!
 
-[video]
+https://github.com/shakilakamalasena/weather-app/assets/104765058/9d4ef3bc-8e16-4a2e-becc-74b3f3df4063
 
 ## Contributions
 
